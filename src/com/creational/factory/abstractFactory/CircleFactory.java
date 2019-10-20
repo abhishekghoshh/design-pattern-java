@@ -1,4 +1,7 @@
-package com.creational.factory;
+package com.creational.factory.abstractFactory;
+
+import com.creational.factory.shapes.Circle;
+import com.creational.factory.shapes.Shape;
 
 public class CircleFactory extends AbstractFactory{
 

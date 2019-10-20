@@ -1,5 +1,10 @@
 package com.creational.factory;
 
+import com.creational.factory.shapes.Circle;
+import com.creational.factory.shapes.Rectangle;
+import com.creational.factory.shapes.Shape;
+import com.creational.factory.shapes.Square;
+
 public class ShapeFactory {
 
 	public Shape getShape(String shapeType) {
