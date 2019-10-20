@@ -11,5 +11,24 @@ public class Client {
 		shape2.draw();
 		Shape shape3 = new SquareFactory().getShape();
 		shape3.draw();
+		
+		//Using object method concrete shape factory class to provide shape object
+		ShapeFactory shapeFactory = new ShapeFactory();
+		
+		Shape shape4= shapeFactory.getShape("rectangle");
+		shape4.draw();
+		Shape shape5= shapeFactory.getShape("circle");
+		shape5.draw();
+		Shape shape6= shapeFactory.getShape("square");
+		shape6.draw();
+		
+		//Using static method in concrete shape factory class to provide shape object
+		
+		Shape shape7= ShapeFactory.staticGetShape("rectangle");
+		shape7.draw();
+		Shape shape8= ShapeFactory.staticGetShape("circle");
+		shape8.draw();
+		Shape shape9= ShapeFactory.staticGetShape("square");
+		shape9.draw();
 	}
 }
