@@ -6,17 +6,17 @@ import com.creational.abstractFactory.abstractFactory.ShapeFactory;
 
 
 public class FactoryProducer {
-    public static AbstractFactory getFactory(String choice)
-    {
-
-        if(choice.equalsIgnoreCase("SHAPE")){
-            return new ShapeFactory();
-
-        }else if(choice.equalsIgnoreCase("COLOR")){
-            return new ColorFactory();
-        }
-
-        return null;
+	
+    public static AbstractFactory getFactory(String factory){
+    	
+    	switch (factory.toUpperCase()) {
+			case "SHAPE":
+				return new ShapeFactory();
+			case "COLOR":
+				return new ColorFactory();
+			default:
+				throw new RuntimeException("Factory "+factory+" is unknown");
+		}
     }
 
 }

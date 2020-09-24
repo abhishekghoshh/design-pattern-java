@@ -9,29 +9,22 @@ import com.creational.abstractFactory.shapes.Square;
 public class ShapeFactory extends AbstractFactory {
 
     @Override
-    public Shape getShape(String shapeType)
-    {
-        if(shapeType == null){
-            return null;
-        }
-
-        if(shapeType.equalsIgnoreCase("CIRCLE")){
-            return new Circle();
-
-        }else if(shapeType.equalsIgnoreCase("RECTANGLE")){
-            return new Rectangle();
-
-        }else if(shapeType.equalsIgnoreCase("SQUARE")){
-            return new Square();
-        }
-
-        return null;
+    public Shape getShape(String shape) {
+    	switch(shape.toUpperCase()) {
+		case "CIRCLE":
+			return new Circle();
+		case "RECTANGLE":
+			return new Rectangle();
+		case "SQUARE":
+			return new Square();
+		default:
+			throw new RuntimeException("Shape "+shape+" is unknown");
+    	}
     }
 
     @Override
-    public Color getColor(String color)
-    {
-        return null;
+    public Color getColor(String color){
+       	throw new RuntimeException("getColor is not Allowed");
     }
 
 }

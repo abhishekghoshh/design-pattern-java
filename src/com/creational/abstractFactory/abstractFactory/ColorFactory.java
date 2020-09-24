@@ -10,27 +10,22 @@ public class ColorFactory extends AbstractFactory {
 
     @Override
     public Shape getShape(String shapeType) {
-        return null;
+        throw new RuntimeException("getShape is not Allowed");
     }
 
     @Override
 	public Color getColor(String color) {
-
-        if(color == null){
-            return null;
-        }
-
-        if(color.equalsIgnoreCase("RED")){
-            return new Red();
-
-        }else if(color.equalsIgnoreCase("GREEN")){
-            return new Green();
-
-        }else if(color.equalsIgnoreCase("BLUE")){
-            return new Blue();
-        }
-
-        return null;
+    	
+    	switch(color.toUpperCase()) {
+    		case "RED":
+    			return new Red();
+    		case "GREEN":
+    			return new Green();
+    		case "BLUE":
+    			return new Blue();
+    		default:
+    			throw new RuntimeException("Color "+color+" is unknown");
+    	}
     }
 }
 
