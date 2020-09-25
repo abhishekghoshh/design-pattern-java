@@ -2,13 +2,13 @@ package com.creational.builder;
 
 class Cake {
 
-    private final double sugar;   //cup
-    private final double butter;  //cup
+    private final double sugar;   
+    private final double butter;  
     private final int eggs;
-    private final int vanila;     //spoon
-    private final double flour;   //cup
-    private final double bakingpowder; //spoon
-    private final double milk;  //cup
+    private final int vanila;     
+    private final double flour;   
+    private final double bakingpowder;
+    private final double milk;
     private final int cherry;
     
     
@@ -23,8 +23,33 @@ class Cake {
         this.milk = builder.milk;
         this.cherry = builder.cherry;      
     }
+    
 
-    @Override
+	public double getSugar() {
+		return sugar;
+	}
+	public double getButter() {
+		return butter;
+	}
+	public int getEggs() {
+		return eggs;
+	}
+	public int getVanila() {
+		return vanila;
+	}
+	public double getFlour() {
+		return flour;
+	}
+	public double getBakingpowder() {
+		return bakingpowder;
+	}
+	public double getMilk() {
+		return milk;
+	}
+	public int getCherry() {
+		return cherry;
+	}
+	@Override
     public String toString() {
         return "Cake{" + "sugar=" + sugar + ", butter=" + butter + ", eggs=" + eggs + ", vanila=" + vanila + ", flour=" + flour + ", bakingpowder=" + bakingpowder + ", milk=" + milk + ", cherry=" + cherry + '}';
 
@@ -32,17 +57,32 @@ class Cake {
 
     public static class Builder {
 
-        private double sugar;   //cup
-        private double butter;  //cup
+        private double sugar;   
+        private double butter;  
         private int eggs;
-        private int vanila;     //spoon
-        private double flour;   //cup
-        private double bakingpowder; //spoon
-        private double milk;  //cup
+        private int vanila;     
+        private double flour;   
+        private double bakingpowder; 
+        private double milk;  
         private int cherry;
 
-        //builder methods for setting property
-        public Builder sugar(double cup){this.sugar = cup; return this; }
+        
+        public Builder(double sugar, double butter, int eggs, int vanila, double flour, double bakingpowder,
+				double milk, int cherry) {
+			this.sugar = sugar;
+			this.butter = butter;
+			this.eggs = eggs;
+			this.vanila = vanila;
+			this.flour = flour;
+			this.bakingpowder = bakingpowder;
+			this.milk = milk;
+			this.cherry = cherry;
+		}
+        
+		public Builder() {
+		}
+
+		public Builder sugar(double cup){this.sugar = cup; return this; }
         public Builder butter(double cup){this.butter = cup; return this; }
         public Builder eggs(int number){this.eggs = number; return this; }
         public Builder vanila(int spoon){this.vanila = spoon; return this; }

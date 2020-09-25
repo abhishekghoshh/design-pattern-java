@@ -4,7 +4,7 @@ public class Client {
 	public static void main(String args[]) {
 		
 		//Creating object using Builder pattern in java
-		Cake whiteCake = new 
+		Cake cake = new 
 				Cake.Builder()
 				.sugar(1)
 				.butter(0.5)
@@ -15,7 +15,6 @@ public class Client {
 				.milk(0.5)
 				.build();
 		
-		//Cake is ready to eat :)
-		System.out.println(whiteCake);
+		System.out.println(cake);
 	}
 }
