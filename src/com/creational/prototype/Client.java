@@ -22,7 +22,6 @@ public class Client {
 		clonedCube.draw();
 		
 		System.out.println(cube == clonedCube);
-		
 	}
 
 }

@@ -29,6 +29,8 @@ public class ShapeFactory {
 	public static Shape getShape(String key) {
 		return (Shape) cache.get(key.toLowerCase()).clone();
 	}
+	private ShapeFactory() {
+	}
 	
 	
 }
