@@ -1,4 +1,4 @@
-package com.creational.singleton;
+package com.creational.singleton.singleton;
 
 public class LazySingleton {
 
@@ -7,7 +7,6 @@ public class LazySingleton {
     /** Don't let anyone else instantiate this class */
     private LazySingleton() {}
 
-    /** Lazily create the instance when it is accessed for the first time */
     public static synchronized LazySingleton getInstance() {
         if(instance == null) {
             instance = new LazySingleton();

@@ -1,4 +1,4 @@
-package com.creational.singleton;
+package com.creational.singleton.singleton;
 
 public class LazyDoubleCheckedLockingSingleton {
 
@@ -11,7 +11,6 @@ public class LazyDoubleCheckedLockingSingleton {
     public static LazyDoubleCheckedLockingSingleton getInstance() {
         if(instance == null) {
             synchronized (LazyDoubleCheckedLockingSingleton.class) {
-                // double-check
                 if(instance == null) {
                     instance = new LazyDoubleCheckedLockingSingleton();
                 }

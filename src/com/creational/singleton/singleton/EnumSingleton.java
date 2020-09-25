@@ -1,4 +1,4 @@
-package com.creational.singleton;
+package com.creational.singleton.singleton;
 
 import java.util.Arrays;
 

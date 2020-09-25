@@ -1,8 +1,7 @@
-package com.creational.singleton;
+package com.creational.singleton.singleton;
 
 public class LazyInnerClassSingleton {
 
-    /** private constructor to prevent others from instantiating this class */
     private LazyInnerClassSingleton() {}
 
     /** This inner class is loaded only after getInstance() is called for the first time. */
