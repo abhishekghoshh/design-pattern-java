@@ -1,4 +1,7 @@
-package com.structural.adapter;
+package com.structural.adapter.playeradapter;
+
+import com.structural.adapter.audioplayer.MediaPlayerInterface;
+import com.structural.adapter.videoplayer.AdvancedMediaPlayerInterface;
 
 public class AdvancedMediaPlayerAdapter implements MediaPlayerInterface {
     AdvancedMediaPlayerInterface advancedMusicPlayer;
