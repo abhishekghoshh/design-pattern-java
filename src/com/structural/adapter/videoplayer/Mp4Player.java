@@ -12,6 +12,6 @@ public class Mp4Player implements VideoPlayer{
 
     @Override
     public void listen() {
-        System.out.println(className+": Playing mp4 file.  Name: " + myFile);
+        System.out.println(className+" : Playing mp4 file.  Name: " + myFile);
     }
 }
