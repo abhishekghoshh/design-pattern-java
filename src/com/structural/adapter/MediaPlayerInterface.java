@@ -1,4 +1,4 @@
-package academy.learnprogramming;
+package com.structural.adapter;
 
 interface MediaPlayerInterface {
     public void play(String audioType, String fileName);

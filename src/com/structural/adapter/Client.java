@@ -1,4 +1,4 @@
-package academy.learnprogramming;
+package com.structural.adapter;
 
 public class Client {
 

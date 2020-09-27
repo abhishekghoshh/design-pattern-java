@@ -1,4 +1,4 @@
-package academy.learnprogramming;
+package com.structural.adapter;
 
 interface AdvancedMediaPlayerInterface {
     public void loadFilename(String fileName);

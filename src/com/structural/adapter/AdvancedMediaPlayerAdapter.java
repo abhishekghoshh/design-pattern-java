@@ -1,4 +1,4 @@
-package academy.learnprogramming;
+package com.structural.adapter;
 
 public class AdvancedMediaPlayerAdapter implements MediaPlayerInterface {
     AdvancedMediaPlayerInterface advancedMusicPlayer;
