@@ -1,7 +1,8 @@
 package com.structural.adapter.videoplayer;
 
-public class VlcPlayer implements AdvancedMediaPlayerInterface{
+public class VlcPlayer implements VideoPlayer{
     String myFile;
+    String className = this.getClass().getSimpleName();
 
     @Override
     public void loadFilename(String filename) {
@@ -10,6 +11,6 @@ public class VlcPlayer implements AdvancedMediaPlayerInterface{
 
     @Override
     public void listen() {
-        System.out.println("Playing vlc file.  Name: " + myFile);
+        System.out.println(className+" : Playing vlc file.  Name: " + myFile);
     }
 }

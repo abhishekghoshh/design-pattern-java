@@ -1,8 +1,9 @@
 package com.structural.adapter.videoplayer;
 
 
-public class Mp4Player implements AdvancedMediaPlayerInterface{
+public class Mp4Player implements VideoPlayer{
     String myFile;
+    String className = this.getClass().getSimpleName();
 
     @Override
     public void loadFilename(String filename) {
@@ -11,6 +12,6 @@ public class Mp4Player implements AdvancedMediaPlayerInterface{
 
     @Override
     public void listen() {
-        System.out.println("Playing mp4 file.  Name: " + myFile);
+        System.out.println(className+": Playing mp4 file.  Name: " + myFile);
     }
 }
