@@ -1,47 +1,61 @@
 package com.structural.composite.employee;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Manager implements Employee {
+	private int id;
+	private String name;
+	private double salary;
+	private List<Employee> employees = new ArrayList<>();
+	
+	public Manager(int id, String name, double salary) {
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
 
 	@Override
 	public int getId() {
-		// TODO Auto-generated method stub
-		return 0;
+		return id;
 	}
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return name;
 	}
 
 	@Override
 	public double getSalary() {
-		// TODO Auto-generated method stub
-		return 0;
+		return salary;
 	}
 
 	@Override
 	public void print() {
-		// TODO Auto-generated method stub
-
+		System.out.println("Id ="+getId());  
+        System.out.println("Name ="+getName());  
+        System.out.println("Salary ="+getSalary());
+        
+		employees.forEach((employee)->{
+			System.out.println("Id ="+employee.getId());  
+	        System.out.println("Name ="+employee.getName());  
+	        System.out.println("Salary ="+employee.getSalary());
+		});
 	}
 
 	@Override
 	public void add(Employee employee) {
-		// TODO Auto-generated method stub
-
+		employees.add(employee);
 	}
 
 	@Override
 	public void remove(Employee employee) {
-		// TODO Auto-generated method stub
+		employees.remove(employee);
 
 	}
 
 	@Override
 	public Employee getChild(int i) {
-		// TODO Auto-generated method stub
-		return null;
+		return employees.get(i);
 	}
-
 }
