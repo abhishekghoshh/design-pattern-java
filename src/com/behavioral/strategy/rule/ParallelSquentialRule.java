@@ -5,16 +5,16 @@ import java.util.List;
 
 import com.behavioral.strategy.strategy.ExecutionStrategy;
 
-public class Rules {
+public class ParallelSquentialRule {
 	
 	private List<Rule> rules;
 	private ExecutionStrategy executeStrategy;
 	
-	public Rules(List<Rule> rules, ExecutionStrategy executeStrategy) {
+	public ParallelSquentialRule(List<Rule> rules, ExecutionStrategy executeStrategy) {
 		this.rules = rules;
 		this.executeStrategy = executeStrategy;
 	}
-	public Rules() {
+	public ParallelSquentialRule() {
 		rules=new ArrayList<>();
 		executeStrategy = ExecutionStrategy.SEQUENTIAL;
 	}
