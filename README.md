@@ -4,6 +4,7 @@
 - Factory Pattern (Creational)
 - Builder Pattern (Creational)
 - Singleton Pattern (Creational)
+- Observer/Publisher-Subsriber Pattern (Behavioural)
 
 ### All 23 Design Patterns
 - #### Creational Design Pattern

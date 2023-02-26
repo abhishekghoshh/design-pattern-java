@@ -2,22 +2,26 @@ package com.behavioral.observer;
 
 public class Client {
 	public static void main(String[] args) {
-		Topic topic = new Topic();
+		YoutubeChannel youtubeChannel1 = new YoutubeChannel("youtube-channel-1");
+		YoutubeChannel youtubeChannel2 = new YoutubeChannel("youtube-channel-2");
 
-		Observer obj1 = new TopicSubscriber("Obj1");
-		Observer obj2 = new TopicSubscriber("Obj2");
-		Observer obj3 = new TopicSubscriber("Obj3");
+		Subscriber subscriber1 = new YoutubeSubscriber("subscriber-1");
+		Subscriber subscriber2 = new YoutubeSubscriber("subscriber-2");
+		Subscriber subscriber3 = new YoutubeSubscriber("subscriber-3");
 
-		topic.register(obj1);
-		topic.register(obj2);
-		topic.register(obj3);
+		youtubeChannel1.subsribe(subscriber1);
+		youtubeChannel1.subsribe(subscriber2);
+		youtubeChannel1.subsribe(subscriber3);
 
-		obj1.setSubject(topic);
-		obj2.setSubject(topic);
-		obj3.setSubject(topic);
+		youtubeChannel2.subsribe(subscriber1);
+		youtubeChannel2.subsribe(subscriber2);
 
-		obj1.update();
+		youtubeChannel1.notifyObservers("A video has been posted");
+		youtubeChannel1.notifyObserver(subscriber2, "We will visit your city soon");
+		youtubeChannel2.notifyObservers("I had taken a break from youtube");
 
-		topic.postMessage("New Message");
+		subscriber2.printNotification();
+		subscriber2.printNotification();
+
 	}
 }
