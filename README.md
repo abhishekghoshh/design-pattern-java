@@ -6,6 +6,7 @@
 - Singleton Pattern (Creational)
 - Observer/Publisher-Subsriber Pattern (Behavioural)
 - Iterator Pattern (Behavioural)
+- Strategy Pattern (Behavioural)
 
 ### All 23 Design Patterns
 - #### Creational Design Pattern
