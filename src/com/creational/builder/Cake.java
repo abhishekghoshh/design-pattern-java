@@ -1,6 +1,6 @@
 package com.creational.builder;
 
-class Cake {
+public class Cake {
 
 	private final double sugar;
 	private final double butter;
@@ -12,7 +12,7 @@ class Cake {
 	private final int cherry;
 
 	// private constructor to enforce object creation through builder
-	private Cake(Builder builder) {
+	private Cake(CakeBuilder builder) {
 		this.sugar = builder.sugar;
 		this.butter = builder.butter;
 		this.eggs = builder.eggs;
@@ -62,7 +62,7 @@ class Cake {
 
 	}
 
-	public static class Builder {
+	public static class CakeBuilder {
 
 		private double sugar;
 		private double butter;
@@ -73,7 +73,7 @@ class Cake {
 		private double milk;
 		private int cherry;
 
-		public Builder(double sugar, double butter, int eggs, int vanila, double flour, double bakingpowder,
+		public CakeBuilder(double sugar, double butter, int eggs, int vanila, double flour, double bakingpowder,
 				double milk, int cherry) {
 			this.sugar = sugar;
 			this.butter = butter;
@@ -85,45 +85,45 @@ class Cake {
 			this.cherry = cherry;
 		}
 
-		public Builder() {
+		public CakeBuilder() {
 		}
 
-		public Builder sugar(double cup) {
+		public CakeBuilder sugar(double cup) {
 			this.sugar = cup;
 			return this;
 		}
 
-		public Builder butter(double cup) {
+		public CakeBuilder butter(double cup) {
 			this.butter = cup;
 			return this;
 		}
 
-		public Builder eggs(int number) {
+		public CakeBuilder eggs(int number) {
 			this.eggs = number;
 			return this;
 		}
 
-		public Builder vanila(int spoon) {
+		public CakeBuilder vanila(int spoon) {
 			this.vanila = spoon;
 			return this;
 		}
 
-		public Builder flour(double cup) {
+		public CakeBuilder flour(double cup) {
 			this.flour = cup;
 			return this;
 		}
 
-		public Builder bakingpowder(double spoon) {
+		public CakeBuilder bakingpowder(double spoon) {
 			this.sugar = spoon;
 			return this;
 		}
 
-		public Builder milk(double cup) {
+		public CakeBuilder milk(double cup) {
 			this.milk = cup;
 			return this;
 		}
 
-		public Builder cherry(int number) {
+		public CakeBuilder cherry(int number) {
 			this.cherry = number;
 			return this;
 		}
