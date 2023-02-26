@@ -1,6 +1,4 @@
-package com.behavioral.iterator.iterator;
-
-import com.behavioral.iterator.collection.List;
+package com.behavioral.iterator;
 
 public class ListIterator<T> implements Iterator<T> {
 	private List<T> list;

@@ -1,8 +1,4 @@
-package com.behavioral.command.util;
-
-import com.behavioral.command.FileSystem;
-import com.behavioral.command.UnixFileSystem;
-import com.behavioral.command.WindowsFileSystem;
+package com.behavioral.command;
 
 public class FileSystemUtil {
 	

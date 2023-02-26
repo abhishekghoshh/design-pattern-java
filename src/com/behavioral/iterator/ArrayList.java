@@ -1,9 +1,6 @@
-package com.behavioral.iterator.collection;
+package com.behavioral.iterator;
 
 import java.util.Arrays;
-
-import com.behavioral.iterator.iterator.Iterator;
-import com.behavioral.iterator.iterator.ListIterator;
 
 
 public class ArrayList<T> implements List<T> {

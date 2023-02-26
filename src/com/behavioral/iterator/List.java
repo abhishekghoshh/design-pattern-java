@@ -1,4 +1,4 @@
-package com.behavioral.iterator.collection;
+package com.behavioral.iterator;
 
 public interface List<T> extends Collection<T> {
 	void add(T object);

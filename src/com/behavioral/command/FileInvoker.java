@@ -1,9 +1,7 @@
-package com.behavioral.command.invoker;
+package com.behavioral.command;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.behavioral.command.Command;
 
 public class FileInvoker {
 	private Command command;

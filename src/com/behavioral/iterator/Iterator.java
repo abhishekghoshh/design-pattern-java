@@ -1,4 +1,4 @@
-package com.behavioral.iterator.iterator;
+package com.behavioral.iterator;
 
 public interface Iterator<T> {
 	boolean hasNext();

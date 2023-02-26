@@ -1,8 +1,5 @@
 package com.behavioral.command;
 
-import com.behavioral.command.invoker.FileInvoker;
-import com.behavioral.command.util.FileSystemUtil;
-
 public class Client {
 
 	public static void main(String[] args) {

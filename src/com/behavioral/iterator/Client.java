@@ -1,9 +1,5 @@
 package com.behavioral.iterator;
 
-import com.behavioral.iterator.collection.ArrayList;
-import com.behavioral.iterator.collection.List;
-import com.behavioral.iterator.iterator.Iterator;
-
 public class Client {
 
 	public static void main(String[] args) {
