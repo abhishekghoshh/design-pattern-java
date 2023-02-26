@@ -7,6 +7,9 @@
 - Observer/Publisher-Subsriber Pattern (Behavioural)
 - Iterator Pattern (Behavioural)
 - Strategy Pattern (Behavioural)
+- Facade Pattern (Structural)</br>
+	`A facade encapsulates a complex subsystem behind a simple interface. It hides much of the complexity and makes the subsystem easy to use.
+	Also, if we need to use the complex subsystem directly, we still can do that; we aren't forced to use the facade all the time.`
 
 ### All 23 Design Patterns
 - #### Creational Design Pattern
