@@ -2,27 +2,34 @@ package com.behavioral.iterator;
 
 import java.util.Arrays;
 
-
 public class ArrayList<T> implements List<T> {
 
-	private int capacity = 20;
+	private int capacity = 16;
 	private T[] list;
-	private int index=0;
-	
+	private int index = 0;
+
 	@SuppressWarnings("unchecked")
 	public ArrayList() {
-		list=(T[]) new Object[capacity];
+		list = (T[]) new Object[capacity];
 	}
-	
+
 	@Override
-	public Iterator<T> getIterator() {
+	public Iterator<T> iterator() {
 		return new ListIterator<>(this);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public void add(T object) {
-		if(this.index<this.capacity) {
+		if (this.index < this.capacity) {
 			list[index++] = object;
+		} else {
+			T[] newList = (T[]) new Object[2 * capacity];
+			for (int i = 0; i < capacity; i++)
+				newList[i] = list[i];
+			capacity = capacity * 2;
+			list = newList;
+			add(object);
 		}
 	}
 
@@ -33,17 +40,15 @@ public class ArrayList<T> implements List<T> {
 
 	@Override
 	public void add(List<T> list) {
-		for(int i=0;i<list.size();i++) {
-			if(this.index<this.capacity) {
-				this.list[this.index++] = list.get(i); 
-			}
+		for (int i = 0; i < list.size(); i++) {
+			add(list.get(i));
 		}
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public void clear() {
-		list= (T[]) new Object[capacity];
+		list = (T[]) new Object[capacity];
 	}
 
 	@Override
@@ -53,8 +58,7 @@ public class ArrayList<T> implements List<T> {
 
 	@Override
 	public String toString() {
-		return "ArrayList "+ Arrays.toString(list);
+		return "ArrayList " + Arrays.toString(list);
 	}
-	
 
 }

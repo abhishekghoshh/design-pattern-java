@@ -1,6 +1,7 @@
 package com.behavioral.iterator;
 
-public interface Iterator<T> {
-	boolean hasNext();
-	T next();
+public abstract class Iterator<T> {
+	public abstract boolean hasNext();
+
+	public abstract T next();
 }
