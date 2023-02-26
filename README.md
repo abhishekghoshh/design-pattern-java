@@ -1,12 +1,18 @@
-## design-pattern
+# Design Patterns
 
-- Creational Design Pattern
+### 8 Design Patterns that everyone should know
+- Factory Pattern (Creational)
+- Builder Pattern (Creational)
+- Singleton Pattern (Creational)
+
+### All 23 Design Patterns
+- #### Creational Design Pattern
 	- Factory Pattern
 	- Abstract Factory Pattern
 	- Singleton Pattern
 	- Prototype Pattern
 	- Builder Pattern.
-- Structural Design Pattern
+- #### Structural Design Pattern
 	- Adapter Pattern
 	- Bridge Pattern
 	- Composite Pattern
@@ -14,7 +20,7 @@
 	- Facade Pattern
 	- Flyweight Pattern
 	- Proxy Pattern
-- Behavioral Design Pattern
+- ####  Behavioral Design Pattern
 	- Chain Of Responsibility Pattern
 	- Command Pattern
 	- Interpreter Pattern

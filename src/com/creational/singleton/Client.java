@@ -1,42 +1,26 @@
 package com.creational.singleton;
 
-import java.lang.reflect.Constructor;
-
 public class Client {
 
 	public static void main(String[] args) {
 
-		System.out.println(EnumSingleton.WEEKDAY);
-		System.out.println(EnumSingleton.WEEKEND);
+		// Enums are singleton by default
+		Instances.DaysOfWeek.WEEKEND.showHashCode();
+		Instances.DaysOfWeek.WEEKEND.showHashCode();
 
-		/*
-		 * Output
-		 * 
-		 * Initializing enum with [Monday, Tuesday, Wednesday, Thursday, Friday]
-		 * Initializing enum with [Saturday, Sunday] EnumSingleton{days=[Monday,
-		 * Tuesday, Wednesday, Thursday, Friday]} EnumSingleton{days=[Saturday, Sunday]}
-		 */
+		Instances.EagerSingleton.getInstance().showHashCode();
+		Instances.EagerSingleton.getInstance().showHashCode();
 
-		EagerStaticBlockSingleton singletonInstance = EagerStaticBlockSingleton.getInstance();
-		EagerStaticBlockSingleton reflectionInstance = null;
+		Instances.EagerStaticBlockSingleton.getInstance().showHashCode();
+		Instances.EagerStaticBlockSingleton.getInstance().showHashCode();
 
-		try {
-			Constructor[] constructors = EagerStaticBlockSingleton.class.getDeclaredConstructors();
-			for (Constructor constructor : constructors) {
-				constructor.setAccessible(true);
-				reflectionInstance = (EagerStaticBlockSingleton) constructor.newInstance();
-			}
-		} catch (Exception ex) {
-			throw new RuntimeException(ex);
-		}
+		Instances.LazySingleton.getInstance().showHashCode();
+		Instances.LazySingleton.getInstance().showHashCode();
 
-		System.out.println("singletonInstance hashCode: " + singletonInstance.hashCode());
-		System.out.println("reflectionInstance hashCode: " + reflectionInstance.hashCode());
+		Instances.LazyInnerClassSingleton.getInstance().showHashCode();
+		Instances.LazyInnerClassSingleton.getInstance().showHashCode();
 
-		/*
-		 * output singletonInstance hashCode: 366712642 reflectionInstance hashCode:
-		 * 1829164700
-		 */
-
+		Instances.LazyDoubleCheckedLockingSingleton.getInstance().showHashCode();
+		Instances.LazyDoubleCheckedLockingSingleton.getInstance().showHashCode();
 	}
 }
