@@ -7,10 +7,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
-import com.creational.objectPool.jdbc.Connection;
-import com.creational.objectPool.jdbc.JDBCConnection;
-import com.creational.objectPool.pool.ObjectPool;
-
 public class Client {
 	private static AtomicLong processNo=new AtomicLong(0);
 	private final static int count =10;

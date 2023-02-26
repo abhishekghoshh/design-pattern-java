@@ -2,9 +2,6 @@ package com.structural.flyweight;
 
 import java.util.Random;
 
-import com.structural.flyweight.factory.PlayerFactory;
-import com.structural.flyweight.player.Player;
-
 public class Client {
 	
 	/* Assume that we have a total of 10 players in the game. 

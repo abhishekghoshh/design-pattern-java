@@ -3,11 +3,6 @@ package com.creational.prototype;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.creational.prototype.shape.Circle;
-import com.creational.prototype.shape.Rectangle;
-import com.creational.prototype.shape.Shape;
-import com.creational.prototype.shape.Square;
-
 public class ShapeFactory {
 	private static Map<String,Shape> cache = new HashMap<>();
 	

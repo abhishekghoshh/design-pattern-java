@@ -1,10 +1,5 @@
 package com.structural.decorator;
 
-import com.structural.decorator.decorator.FriedRice;
-import com.structural.decorator.food.Food;
-import com.structural.decorator.food.NonVegFood;
-import com.structural.decorator.food.VegFood;
-
 public class Client {
 
 	public static void print(Food food) {

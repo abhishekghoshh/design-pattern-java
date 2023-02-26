@@ -3,14 +3,6 @@ package com.behavioral.visitor;
 import java.util.Arrays;
 import java.util.List;
 
-import com.behavioral.visitor.visitable.Book;
-import com.behavioral.visitor.visitable.CD;
-import com.behavioral.visitor.visitable.DVD;
-import com.behavioral.visitor.visitable.Visitable;
-import com.behavioral.visitor.visitor.SouthAmericaPostageVisitor;
-import com.behavioral.visitor.visitor.USPostageVisitor;
-import com.behavioral.visitor.visitor.Visitor;
-
 public class Client {
 
 	public static double calculatePostage(Visitor visitor, List<Visitable> items) {

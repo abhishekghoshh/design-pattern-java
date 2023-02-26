@@ -1,10 +1,5 @@
 package com.structural.composite;
 
-import com.structural.composite.employee.Developer;
-import com.structural.composite.employee.Employee;
-import com.structural.composite.employee.Manager;
-import com.structural.composite.employee.Supervisor;
-
 public class Client {
 	public static void main(String args[]) {
 		Employee emp1 = new Developer(101, "Sohan Kumar", 20000.0);

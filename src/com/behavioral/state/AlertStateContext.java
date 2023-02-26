@@ -1,8 +1,5 @@
 package com.behavioral.state;
 
-import com.behavioral.state.state.Ringing;
-import com.behavioral.state.state.State;
-
 public class AlertStateContext {
 	private State currentState;
 

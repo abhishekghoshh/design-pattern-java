@@ -1,9 +1,5 @@
 package com.behavioral.observer;
 
-import com.behavioral.observer.observer.Observer;
-import com.behavioral.observer.observer.TopicSubscriber;
-import com.behavioral.observer.subject.Topic;
-
 public class Client {
 	public static void main(String[] args) {
 		Topic topic = new Topic();

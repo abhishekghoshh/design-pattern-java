@@ -1,15 +1,5 @@
 package com.structural.bridge;
 
-import com.structural.bridge.border.Border;
-import com.structural.bridge.border.DashedBorder;
-import com.structural.bridge.border.SolidBorder;
-import com.structural.bridge.color.BlueColor;
-import com.structural.bridge.color.Color;
-import com.structural.bridge.color.RedColor;
-import com.structural.bridge.shape.CircleShape;
-import com.structural.bridge.shape.RectangleShape;
-import com.structural.bridge.shape.Shape;
-
 public class Client {
 	
 	public static void main(String args[]) {

@@ -1,14 +1,5 @@
 package com.structural.adapter;
 
-import com.structural.adapter.adapter.Adapter;
-import com.structural.adapter.adapter.PlayerAdapter;
-import com.structural.adapter.audioplayer.AudioPlayer;
-import com.structural.adapter.audioplayer.MP3Player;
-import com.structural.adapter.videoplayer.Mp4Player;
-import com.structural.adapter.videoplayer.VideoPlayer;
-import com.structural.adapter.videoplayer.VlcPlayer;
-
-
 public class Client {
 
     public static void main(String[] args) {

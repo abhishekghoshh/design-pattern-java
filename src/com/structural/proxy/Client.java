@@ -1,8 +1,5 @@
 package com.structural.proxy;
 
-import com.structural.proxy.internet.Internet;
-import com.structural.proxy.proxy.ProxyInternet;
-
 public class Client {
 	public static void checkInternet(Internet internet) {
 		try{

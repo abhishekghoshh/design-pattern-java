@@ -1,8 +1,5 @@
 package com.creational.objectPool;
 
-import com.creational.objectPool.jdbc.Connection;
-import com.creational.objectPool.pool.ObjectPool;
-
 public class Process implements Runnable{
 	private ObjectPool<Connection> pool;
 	private int threadNo;

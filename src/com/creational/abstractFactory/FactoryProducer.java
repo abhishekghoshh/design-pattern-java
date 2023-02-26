@@ -1,10 +1,5 @@
 package com.creational.abstractFactory;
 
-import com.creational.abstractFactory.abstractFactory.AbstractFactory;
-import com.creational.abstractFactory.abstractFactory.ColorFactory;
-import com.creational.abstractFactory.abstractFactory.ShapeFactory;
-
-
 public class FactoryProducer {
 	
     public static AbstractFactory getFactory(String factory){

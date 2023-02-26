@@ -1,8 +1,5 @@
 package com.behavioral.strategy;
 
-import com.behavioral.strategy.model.DomainModel;
-import com.behavioral.strategy.strategy.StrategyBuilder;
-
 public class Client {
 
 	public static void main(String[] args) {

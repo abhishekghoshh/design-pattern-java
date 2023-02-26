@@ -1,8 +1,5 @@
 package com.creational.prototype;
 
-import com.creational.prototype.shape.Cube;
-import com.creational.prototype.shape.Shape;
-
 public class Client {
 
 	public static void main(String[] args) {

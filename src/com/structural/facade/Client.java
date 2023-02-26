@@ -1,19 +1,5 @@
 package com.structural.facade;
 
-import com.structural.facade.hotel.kepper.HotelKeeper;
-import com.structural.facade.hotel.menu.BothMenu;
-import com.structural.facade.hotel.menu.NonVegMenu;
-import com.structural.facade.hotel.menu.VegMenu;
-import com.structural.facade.theater.Amplifier;
-import com.structural.facade.theater.CdPlayer;
-import com.structural.facade.theater.DvdPlayer;
-import com.structural.facade.theater.HomeTheaterFacade;
-import com.structural.facade.theater.PopcornPopper;
-import com.structural.facade.theater.Projector;
-import com.structural.facade.theater.Screen;
-import com.structural.facade.theater.TheaterLights;
-import com.structural.facade.theater.Tuner;
-
 public class Client {
 	public static void main(String arg[]) {
 		HotelKeeper keeper = new HotelKeeper();

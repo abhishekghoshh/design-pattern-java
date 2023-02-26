@@ -1,9 +1,5 @@
 package com.creational.abstractFactory;
 
-import com.creational.abstractFactory.abstractFactory.AbstractFactory;
-import com.creational.abstractFactory.colors.Color;
-import com.creational.abstractFactory.shapes.Shape;
-
 public class Client {
     public static void main(String [] args)
     {

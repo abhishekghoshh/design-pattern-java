@@ -1,10 +1,5 @@
 package com.behavioral.mediator;
 
-import com.behavioral.mediator.mediator.ChatMediator;
-import com.behavioral.mediator.mediator.Mediator;
-import com.behavioral.mediator.participant.ChatParticipant;
-import com.behavioral.mediator.participant.Participant;
-
 public class Client {
 	public static void main(String arg[]) {
 		Mediator mediator = new ChatMediator();

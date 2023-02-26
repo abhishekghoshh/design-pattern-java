@@ -1,10 +1,5 @@
 package com.creational.factory;
 
-import com.creational.factory.abstractFactory.CircleFactory;
-import com.creational.factory.abstractFactory.RectangularFactory;
-import com.creational.factory.abstractFactory.SquareFactory;
-import com.creational.factory.shapes.Shape;
-
 public class Client {
 	
 	public static void main(String[] args) {
