@@ -1,4 +1,4 @@
-package com.behavioral.command.filesystem;
+package com.behavioral.command;
 
 public class WindowsFileSystem implements FileSystem {
 	@Override

@@ -1,4 +1,4 @@
-package com.behavioral.chainOfResponsible.message;
+package com.behavioral.chainOfResponsible;
 
 public class Message {
 	private String message;

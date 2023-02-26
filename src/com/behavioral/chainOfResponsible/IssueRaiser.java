@@ -1,7 +1,4 @@
-package com.behavioral.chainOfResponsible.raiser;
-
-import com.behavioral.chainOfResponsible.message.Message;
-import com.behavioral.chainOfResponsible.reciever.Receiver;
+package com.behavioral.chainOfResponsible;
 
 public class IssueRaiser implements Raiser{
 	public Receiver receiver;

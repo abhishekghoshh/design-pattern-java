@@ -1,6 +1,4 @@
-package com.behavioral.chainOfResponsible.reciever;
-
-import com.behavioral.chainOfResponsible.message.Message;
+package com.behavioral.chainOfResponsible;
 
 public class FaxReceiver implements Receiver {
 	private Receiver nextReceiver;

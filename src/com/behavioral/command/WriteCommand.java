@@ -1,6 +1,4 @@
-package com.behavioral.command.command;
-
-import com.behavioral.command.filesystem.FileSystem;
+package com.behavioral.command;
 
 public class WriteCommand implements Command{
 	private FileSystem fileSystem;

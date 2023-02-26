@@ -1,13 +1,5 @@
 package com.behavioral.chainOfResponsible;
 
-import com.behavioral.chainOfResponsible.message.Message;
-import com.behavioral.chainOfResponsible.message.Priority;
-import com.behavioral.chainOfResponsible.raiser.IssueRaiser;
-import com.behavioral.chainOfResponsible.raiser.Raiser;
-import com.behavioral.chainOfResponsible.reciever.EmailReceiver;
-import com.behavioral.chainOfResponsible.reciever.FaxReceiver;
-import com.behavioral.chainOfResponsible.reciever.Receiver;
-
 public class Client {
 	public static void main(String[] args) {
 

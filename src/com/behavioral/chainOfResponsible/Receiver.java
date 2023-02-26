@@ -1,6 +1,4 @@
-package com.behavioral.chainOfResponsible.reciever;
-
-import com.behavioral.chainOfResponsible.message.Message;
+package com.behavioral.chainOfResponsible;
 
 public interface Receiver {
 	boolean processMessage(Message msg);
