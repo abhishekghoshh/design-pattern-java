@@ -1,11 +1,13 @@
 package com.behavioral.strategy;
 
-public abstract class DomainModel implements Partner{
-	private String name;
-	public void setName(String name) {
-		this.name = name;
+public abstract class DomainModel implements Partner {
+	private String data;
+
+	public void setData(String data) {
+		this.data = data;
 	}
-	public void print() {
-		System.out.println("Name is : "+name);
+
+	public void printThread(String output) {
+		System.out.println("Executing in thread " + Thread.currentThread().getName() + " " + output + " " + data);
 	}
 }

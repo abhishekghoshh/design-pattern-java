@@ -3,21 +3,28 @@ package com.behavioral.strategy;
 public class Client {
 
 	public static void main(String[] args) {
-		DomainModel domainModel1 = new DomainModel() {
+		executeForBankUsers();
+		executeForCardUsers();
+	}
+
+	private static void executeForCardUsers() {
+		DomainModel cardModel = new DomainModel() {
 			@Override
 			public String getPartnerId() {
-				return "01";
+				return Partner.CARD;
 			}
 		};
-		StrategyBuilder.getStrategy(domainModel1).build().executeStrategy(domainModel1);
-		
-		DomainModel domainModel2 = new DomainModel() {
+		StrategyBuilder.getStrategy(cardModel).build().executeStrategy(cardModel);
+	}
+
+	private static void executeForBankUsers() {
+		DomainModel bankModel = new DomainModel() {
 			@Override
 			public String getPartnerId() {
-				return "02";
+				return Partner.BANK;
 			}
 		};
-		StrategyBuilder.getStrategy(domainModel2).build().executeStrategy(domainModel2);
+		StrategyBuilder.getStrategy(bankModel).build().executeStrategy(bankModel);
 	}
 
 }
