@@ -1,34 +1,24 @@
 package com.creational.factory;
 
 public class Client {
-	
+
 	public static void main(String[] args) {
-		
-		//Using abstract factory class
-		Shape shape1 = new RectangularFactory().getShape();
-		shape1.draw();
-		Shape shape2 = new CircleFactory().getShape();
-		shape2.draw();
-		Shape shape3 = new SquareFactory().getShape();
-		shape3.draw();
-		
-		//Using object method concrete shape factory class to provide shape object
-		ShapeFactory shapeFactory = new ShapeFactory();
-		
-		Shape shape4= shapeFactory.getShape("rectangle");
-		shape4.draw();
-		Shape shape5= shapeFactory.getShape("circle");
-		shape5.draw();
-		Shape shape6= shapeFactory.getShape("square");
-		shape6.draw();
-		
-		//Using static method in concrete shape factory class to provide shape object
-		
-		Shape shape7= ShapeFactory.staticGetShape("rectangle");
-		shape7.draw();
-		Shape shape8= ShapeFactory.staticGetShape("circle");
-		shape8.draw();
-		Shape shape9= ShapeFactory.staticGetShape("square");
-		shape9.draw();
+
+		Shapes.CIRCLE.draw();
+		Shapes.RECTANGLE.draw();
+		Shapes.SQUARE.draw();
+
+		ShapeFactory.getShape(Shape.CIRCLE).draw();
+		ShapeFactory.getShape(Shape.RECTANGLE).draw();
+		ShapeFactory.getShape(Shape.SQUARE).draw();
+
+		ShapeFactories.CIRCLE_FACTORY.getShape().draw();
+		ShapeFactories.RECTANGLE_FACTORY.getShape().draw();
+		ShapeFactories.SQUARE_FACTORY.getShape().draw();
+
+		ShapeFactory.getShapeFactory(Shape.CIRCLE).getShape().draw();
+		ShapeFactory.getShapeFactory(Shape.RECTANGLE).getShape().draw();
+		ShapeFactory.getShapeFactory(Shape.SQUARE).getShape().draw();
+
 	}
 }
