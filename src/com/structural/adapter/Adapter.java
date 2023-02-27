@@ -1,7 +1,5 @@
 package com.structural.adapter;
 
-public interface Adapter extends AudioPlayer, VideoPlayer {
-	public void adapt(AudioPlayer audioPlayer);
+public abstract class Adapter {
 
-	public void adapt(VideoPlayer videoPlayer);
 }
